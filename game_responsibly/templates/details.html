@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<div class="detail-container">
+    <div class="detail-main">
+        <div class="detail-head">
+            <h3>DETAILS ABOUT GAMES:</h3>
+            <h2>{{games.title}}</h2>
+        </div>
+        <div class="detail">
+            <p><label>GENRE</label> : {{games.genre}}</p>
+            <p><label>PLATFORM</label> : {{games.platform}}</p>
+            <p><label>DESCRIPTION</label> : {{games.description}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<div class="sub">
+    
+    <h2 class="head-game">GAMES AVAILABLE</h2>
+<ul>
+    <div class="main-content">
+        
+        {% for ele in game %}
+    <div class="content-data">
+        <a href="{% url 'ga-det' ele.id %}">
+            <h3>{{ele.title}}</h3>
+        </a>
+    </div>
+{% endfor %}
+</div>
+</ul>
+</div>
+{% endblock content %}
